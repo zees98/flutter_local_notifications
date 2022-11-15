@@ -660,11 +660,14 @@ public class FlutterLocalNotificationsPlugin
         repeatInterval = 60000 * 60;
         break;
       case Daily:
-        repeatInterval = 60000 * 60 * 24;
+        repeatInterval = 60000 * 10;
+        // * 60 * 24;
         break;
       case Weekly:
         repeatInterval = 60000 * 60 * 24 * 7;
         break;
+      // case Every10Minutes:
+      //   repeatInterval = 60000;
       default:
         break;
     }
